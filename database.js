@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
 // Connection to MongoDB Atlas cloud database
-mongoose.connect('mongodb+srv://amir30:UaQ6YuYJiGCPTpGb@cluster0.jwg5u9v.mongodb.net/test')
+mongoose.connect(process.env.MONGODB_URI,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true,
+})
     .then(() => console.log('Connected to MongoDB Atlas!'))
     .catch(err => console.error('Connection error:', err));
 
