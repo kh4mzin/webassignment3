@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif; /* You can change the font family as you like */
+    font-weight: bold;
+    background-image: url("https://beatmaker.tv/Default/General/Image/121074?type=BeatImageOriginal&ver=1"); /* Ensure the image path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #be2826;
+    color:#fff;
+}
+
+
+input, button {
+    padding: 15px; /* Increase padding for larger appearance */
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Increase font size */
+}
+
+input {
+    width: 50%; /* Increase width of input */
+    max-width: 400px; /* Set a max-width to avoid it being too wide on large screens */
+}
+
+button {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+#search-container {
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.character {
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: '• ';
+    color: #ffcc00;
+}

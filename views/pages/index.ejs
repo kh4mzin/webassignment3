@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+    <%- include('../components/head.ejs') %>
+
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+            color: #4a4a4a;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #FF8234FF;
+        }
+
+
+
+        .containerblock {
+            background-color: #FF8234FF;
+            margin-top: 20px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container p {
+            color: #666666;
+            font-size: 18px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<%- include('../components/navbar.ejs') %>
+
+
+<div class="containerblock">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center">Welcome to Amir's Project</h1>
+            <h3 class="text-center mb-4">Navigate using the navbar above</h3>
+            <p class="text-center">You can check the Superheroes search,News</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <img src="https://i.pinimg.com/originals/11/f8/f3/11f8f35985c6ad6a6762a94da3dab01c.jpg" class="img-fluid" alt="Image 1">
+        </div>
+        <div class="col-md-4">
+            <img src="https://th.bing.com/th/id/OIP.WghJWfxFYOBLhTnVOKkQgAAAAA?rs=1&pid=ImgDetMain" class="img-fluid" alt="Image 2">
+        </div>
+    </div>
+</div>
+
+
+<% if (error) { %>
+    <script>
+        Swal.fire({
+            title: "An error occured!",
+            text: "<%= error %>",
+            icon: "error"
+        });
+    </script>
+<% } %>
+
+</body>
+</html>

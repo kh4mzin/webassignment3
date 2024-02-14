@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+
+    <%- include('../components/head.ejs') %>
+</head>
+<body class="bg-light vh-100">
+
+    <%- include('../components/navbar.ejs') %>
+
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            color: #000; /* Change text color to black */
+            background-color: #222; /* Set background color to #222 */
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        body input[type="text"],
+        body input[type="number"],
+        body button {
+            background-color: #5c0054; /* Change button background color to #5c0054 */
+            color: #fff; /* Change button text color to white */
+            border-color: #990872;
+        }
+
+        body input[type="text"]::placeholder,
+        body input[type="number"]::placeholder {
+            color: #000000;
+        }
+
+        body .card0,
+        body .card2 {
+            background-color: #000000;
+            color: #ccc;
+        }
+
+        body .line {
+            background-color: #444;
+        }
+
+        body .light-text {
+            color: #999;
+        }
+    </style>
+
+    <div class="container">
+        <div class="fs-1 fw-semibold my-3"></div>
+
+        <div class="row">
+            <% data.forEach(function(article) { %>
+                <div class="col-md-6 mb-4">
+                    <div class="news-item">
+                        <% if(article.image) { %>
+                            <img src="<%= article.image %>" alt="Article Image" class="img-fluid">
+                        <% } %>
+                        <div class="news-content">
+                            <h2><%= article.title %></h2>
+                            <p><%= article.description %></p>
+                            <a href="<%= article.url %>" class="btn btn-primary" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+    <% if (error) { %>
+        <script>
+            Swal.fire({
+                title: "An error occurred!",
+                text: "<%= error %>",
+                icon: "error"
+            });
+        </script>
+    <% } %>
+</body>
+</html>
