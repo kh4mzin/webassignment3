@@ -1,4 +1,4 @@
-#Web Application for Marvel Superheroes and BBC News
+# Web Application for Marvel Superheroes and BBC News
 # Introduction
 This web application offers a unique blend of functionalities catering to both superhero enthusiasts and those keeping up with current affairs. It features user registration, action history tracking, and integrates APIs for Marvel superheroes and BBC news. Additionally, the application includes an admin panel for user account management.
 
