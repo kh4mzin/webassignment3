@@ -13,7 +13,7 @@ New users can create accounts to access exclusive features.
 Registration process includes necessary validations to ensure data accuracy and security.
 Superheroes Page:
 
-Explore a database of superheroes and their fascinating stories.
+Explore a api of superheroes and their fascinating stories.
 Discover detailed information about your favorite superheroes, including their powers, origins, and more.
 BBC News Page:
 
