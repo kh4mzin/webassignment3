@@ -17,25 +17,27 @@ Installation
 bash
 Copy code
 # Clone the repository
-git clone [repository-link]
-
-# Navigate to the project directory
-cd [project-directory]
+git clone [https://github.com/kh4mzin/webassignment3.git]
 
 # Install dependencies
-npm install
+[npm install]
 Usage
 Registration: Users can register by filling out a form with their name, email, and password.
 Action History: Users can view their action history on the site.
 Marvel API: Search and retrieve information on Marvel superheroes and villains.
 BBC News API: Access important news from BBC.
 Features
-User Registration: Secure registration system with fields for name, email, and password.
-Action History Page: Keeps track of user activities on the site.
-Marvel Superheroes API Integration: Fetches detailed information about Marvel characters.
-BBC News API Integration: Provides latest news feeds from BBC.
-Admin Panel: Enables admins to manage user accounts, including adding, deleting, and granting admin privileges.
-Dependencies
+# User Registration: 
+Secure registration system with fields for name, email, and password.
+# Action History Page:
+Keeps track of user activities on the site.
+# Marvel Superheroes API Integration: 
+Fetches detailed information about Marvel characters.
+# BBC News API Integration:
+Provides latest news feeds from BBC.
+# Admin Panel:
+Enables admins to manage user accounts, including adding, deleting, and granting admin privileges.
+# Dependencies
 axios: For making HTTP requests.
 bcrypt: For hashing user passwords.
 body-parser: To parse incoming request bodies.
